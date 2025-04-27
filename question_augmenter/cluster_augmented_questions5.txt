@@ -1,0 +1,171 @@
+Cluster 0:
+  1. Why is isolating execution into processes critical to OS design?
+  2. How do processes support multitasking and isolation in operating systems?
+  3. How does the OS isolate processes from each other?
+  4. Why is isolation necessary for stable multitasking?
+  5. How does the OS prevent data leakage between processes?
+  6. In what way is security enhanced by isolating processes?
+  7. Why is isolating execution into processes critical to OS design?
+  8. How do processes support multitasking and isolation in operating systems?
+  9. How does the OS isolate processes from each other?
+  10. Why is isolation necessary for stable multitasking?
+  11. How does the OS prevent data leakage between processes?
+  12. In what way is security enhanced by isolating processes?
+✅ Merged Question: Given the following list of questions about operating systems, write one comprehensive question that captures all their core ideas without omitting any important concept : Why is isolating execution into processes critical to OS design?
+
+Cluster 1:
+  1. How does the OS manage limited hardware resources?
+  2. What strategies help the OS fairly share CPU, memory, and I/O?
+  3. How does resource management work in a multi-user OS?
+  4. In what way does the OS allocate and reclaim resources?
+  5. What methods does an OS use to optimize resource utilization?
+  6. How does the OS manage limited hardware resources?
+  7. What strategies help the OS fairly share CPU, memory, and I/O?
+  8. How does resource management work in a multi-user OS?
+  9. In what way does the OS allocate and reclaim resources?
+  10. What methods does an OS use to optimize resource utilization?
+✅ Merged Question: What strategies help the OS fairly share CPU, memory, and I/O?
+
+Cluster 2:
+  1. What abstractions does an operating system provide?
+  2. How does an OS abstract away hardware complexity for programs?
+  3. In what ways does the OS simplify resource access through abstraction?
+  4. Can you describe the layers of abstraction an OS offers to users and software?
+  5. What core abstractions like processes and files does the OS implement?
+  6. Why is the process abstraction so fundamental?
+  7. What makes the process abstraction a building block for modern OSes?
+  8. What abstractions does an operating system provide?
+  9. How does an OS abstract away hardware complexity for programs?
+  10. In what ways does the OS simplify resource access through abstraction?
+  11. Can you describe the layers of abstraction an OS offers to users and software?
+  12. What core abstractions like processes and files does the OS implement?
+  13. Why is the process abstraction so fundamental?
+  14. What makes the process abstraction a building block for modern OSes?
+✅ Merged Question: What core abstractions like processes and files does the OS implement?
+
+Cluster 3:
+  1. What are interrupts and why are they useful?
+  2. How do interrupts let the OS respond quickly to events?
+  3. Why are hardware interrupts critical to OS responsiveness?
+  4. What role do interrupts play in CPU and device coordination?
+  5. In what way do interrupts support asynchronous operations?
+  6. How does the OS use interrupts to manage hardware efficiently?
+  7. What are interrupts and why are they useful?
+  8. How do interrupts let the OS respond quickly to events?
+  9. Why are hardware interrupts critical to OS responsiveness?
+  10. What role do interrupts play in CPU and device coordination?
+  11. In what way do interrupts support asynchronous operations?
+  12. How does the OS use interrupts to manage hardware efficiently?
+✅ Merged Question: How do interrupts let the OS respond quickly to events?
+
+Cluster 4:
+  1. How does time-sharing make computers more useful?
+  2. Why was time-sharing a breakthrough in OS evolution?
+  3. How does time-sharing improve user experience on shared machines?
+  4. What problem did time-sharing solve in early computing?
+  5. In what way does time-sharing enhance multi-user systems?
+  6. Why did the shift from batch systems to time-sharing matter?
+  7. How does time-sharing make computers more useful?
+  8. Why was time-sharing a breakthrough in OS evolution?
+  9. How does time-sharing improve user experience on shared machines?
+  10. What problem did time-sharing solve in early computing?
+  11. In what way does time-sharing enhance multi-user systems?
+  12. Why did the shift from batch systems to time-sharing matter?
+✅ Merged Question: How does time-sharing improve user experience on shared machines?
+
+Cluster 5:
+  1. What is the role of the file system in persistence?
+  2. How does the file system enable long-term data storage?
+  3. Why is a file system essential for retaining data across sessions?
+  4. What functions does the file system serve in data organization?
+  5. In what way does the file system help manage persistent data?
+  6. How does an OS use a file system to provide storage durability?
+  7. What is the role of the file system in persistence?
+  8. How does the file system enable long-term data storage?
+  9. Why is a file system essential for retaining data across sessions?
+  10. What functions does the file system serve in data organization?
+  11. In what way does the file system help manage persistent data?
+  12. How does an OS use a file system to provide storage durability?
+✅ Merged Question: How does the file system enable long-term data storage?
+
+Cluster 6:
+  1. Why are system calls important?
+  2. How do system calls act as the bridge between user and kernel space?
+  3. Why do programs rely on system calls to function?
+  4. What role do system calls play in accessing OS services?
+  5. In what way are system calls central to application-OS interaction?
+  6. Why is the system call interface crucial for protected operations?
+  7. Why are system calls important?
+  8. How do system calls act as the bridge between user and kernel space?
+  9. Why do programs rely on system calls to function?
+  10. What role do system calls play in accessing OS services?
+  11. In what way are system calls central to application-OS interaction?
+  12. Why is the system call interface crucial for protected operations?
+✅ Merged Question: How do system calls act as the bridge between user and kernel space?
+
+Cluster 7:
+  1. In what way does the OS leverage mode separation for safety?
+  2. In what way does the OS leverage mode separation for safety?
+✅ Merged Question: In what way does the OS leverage mode separation for safety?
+
+Cluster 8:
+  1. Why is it important to distinguish between mechanism and policy?
+  2. Why is it important to distinguish between mechanism and policy?
+✅ Merged Question: Why is it important to distinguish between mechanism and policy?
+
+Cluster 9:
+  1. What is the difference between user mode and kernel mode?
+  2. Why does the OS restrict certain operations to kernel mode?
+  3. How are user mode and kernel mode used to enforce protection?
+  4. How do transitions between user and kernel mode occur?
+  5. What is the difference between user mode and kernel mode?
+  6. Why does the OS restrict certain operations to kernel mode?
+  7. How are user mode and kernel mode used to enforce protection?
+  8. How do transitions between user and kernel mode occur?
+✅ Merged Question: How are user mode and kernel mode used to enforce protection?
+
+Cluster 10:
+  1. How does treating programs as processes help manage execution?
+  2. What benefits do processes provide in managing running programs?
+  3. How does treating programs as processes help manage execution?
+  4. What benefits do processes provide in managing running programs?
+✅ Merged Question: How does treating programs as processes help manage execution?
+
+Cluster 11:
+  1. What mechanisms enable the OS to implement policies?
+  2. How does the OS enforce its rules and scheduling strategies?
+  3. What are the underlying tools the OS uses to support its policies?
+  4. In what way do mechanisms support policy decisions in OS design?
+  5. What are examples of mechanisms versus policies in an OS?
+  6. What mechanisms enable the OS to implement policies?
+  7. How does the OS enforce its rules and scheduling strategies?
+  8. What are the underlying tools the OS uses to support its policies?
+  9. In what way do mechanisms support policy decisions in OS design?
+  10. What are examples of mechanisms versus policies in an OS?
+✅ Merged Question: In what way do mechanisms support policy decisions in OS design?
+
+Cluster 12:
+  1. What methods are used to sandbox or isolate user programs?
+  2. What methods are used to sandbox or isolate user programs?
+✅ Merged Question: What methods are used to sandbox or isolate user programs?
+
+Cluster 13:
+  1. What ensures one program can't interfere with another in memory?
+  2. What ensures one program can't interfere with another in memory?
+✅ Merged Question: What ensures one program can't interfere with another in memory?
+
+Cluster 14:
+  1. What distinguishes privileged and non-privileged execution modes?
+  2. What distinguishes privileged and non-privileged execution modes?
+✅ Merged Question: What distinguishes privileged and non-privileged execution modes?
+
+Cluster 15:
+  1. What are the main interfaces that the OS exposes to applications?
+  2. What are the main interfaces that the OS exposes to applications?
+✅ Merged Question: What are the main interfaces that the OS exposes to applications?
+
+Cluster 16:
+  1. Why is resource contention a challenge in operating systems?
+  2. Why is resource contention a challenge in operating systems?
+✅ Merged Question: Why is resource contention a challenge in operating systems?
+

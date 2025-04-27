@@ -1,0 +1,60 @@
+What abstractions does an operating system provide?
+How does an OS abstract away hardware complexity for programs?
+What are the main interfaces that the OS exposes to applications?
+In what ways does the OS simplify resource access through abstraction?
+Can you describe the layers of abstraction an OS offers to users and software?
+What core abstractions like processes and files does the OS implement?
+Why is the process abstraction so fundamental?
+How does treating programs as processes help manage execution?
+Why is isolating execution into processes critical to OS design?
+What makes the process abstraction a building block for modern OSes?
+How do processes support multitasking and isolation in operating systems?
+What benefits do processes provide in managing running programs?
+What is the role of the file system in persistence?
+How does the file system enable long-term data storage?
+Why is a file system essential for retaining data across sessions?
+What functions does the file system serve in data organization?
+In what way does the file system help manage persistent data?
+How does an OS use a file system to provide storage durability?
+How does time-sharing make computers more useful?
+Why was time-sharing a breakthrough in OS evolution?
+How does time-sharing improve user experience on shared machines?
+What problem did time-sharing solve in early computing?
+In what way does time-sharing enhance multi-user systems?
+Why did the shift from batch systems to time-sharing matter?
+What mechanisms enable the OS to implement policies?
+How does the OS enforce its rules and scheduling strategies?
+What are the underlying tools the OS uses to support its policies?
+In what way do mechanisms support policy decisions in OS design?
+Why is it important to distinguish between mechanism and policy?
+What are examples of mechanisms versus policies in an OS?
+Why are system calls important?
+How do system calls act as the bridge between user and kernel space?
+Why do programs rely on system calls to function?
+What role do system calls play in accessing OS services?
+In what way are system calls central to application-OS interaction?
+Why is the system call interface crucial for protected operations?
+How does the OS isolate processes from each other?
+What ensures one program can't interfere with another in memory?
+Why is isolation necessary for stable multitasking?
+How does the OS prevent data leakage between processes?
+What methods are used to sandbox or isolate user programs?
+In what way is security enhanced by isolating processes?
+What are interrupts and why are they useful?
+How do interrupts let the OS respond quickly to events?
+Why are hardware interrupts critical to OS responsiveness?
+What role do interrupts play in CPU and device coordination?
+In what way do interrupts support asynchronous operations?
+How does the OS use interrupts to manage hardware efficiently?
+How does the OS manage limited hardware resources?
+What strategies help the OS fairly share CPU, memory, and I/O?
+How does resource management work in a multi-user OS?
+In what way does the OS allocate and reclaim resources?
+Why is resource contention a challenge in operating systems?
+What methods does an OS use to optimize resource utilization?
+What is the difference between user mode and kernel mode?
+Why does the OS restrict certain operations to kernel mode?
+How are user mode and kernel mode used to enforce protection?
+What distinguishes privileged and non-privileged execution modes?
+How do transitions between user and kernel mode occur?
+In what way does the OS leverage mode separation for safety?

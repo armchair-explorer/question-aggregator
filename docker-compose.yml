@@ -1,0 +1,83 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:14
+    container_name: pg-doubt
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: qa_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+  neo4j:
+    image: neo4j:5.10
+    container_name: neo4j-doubt
+    environment:
+      - NEO4J_AUTH=neo4j/testtest
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - neo4j_data:/data
+
+  vectorizer:
+    build:
+      context: ./question_vectorizer_aggregator
+    depends_on:
+      - neo4j
+    environment:
+      - NEO4J_URI=bolt://neo4j:7687
+      - NEO4J_USER=neo4j
+      - NEO4J_PASSWORD=testtest
+    volumes:
+      - ./question_vectorizer_aggregator:/app
+      - ~/.cache/huggingface:/root/.cache/huggingface
+    working_dir: /app
+    command: python3 vectorize_and_push.py
+
+  question-augmenter:
+    platform:  linux/arm64
+    build:
+      context: ./question_augmenter
+      dockerfile: Dockerfile
+    depends_on:
+      - vectorizer
+      - postgres
+    environment:
+      - NEO4J_URI=bolt://neo4j:7687
+      - NEO4J_USER=neo4j
+      - NEO4J_PASSWORD=testtest
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./question_augmenter:/app
+      - ./output:/app/output
+      - ~/.cache/huggingface:/root/.cache/huggingface
+      - ./models:/models
+    command: python3 augment_questions.py
+
+  answer-machine:
+    platform:  linux/arm64
+    build:
+      context: ./answer_machine
+      dockerfile: Dockerfile
+    depends_on:
+      - question-augmenter
+      - postgres
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./answer_machine:/app
+      - ./output:/app/output
+      - ~/.cache/huggingface:/root/.cache/huggingface
+      - ./models:/models
+    command: python3 answer_matcher.py
+
+
+
+
+volumes:
+  neo4j_data:
+  pg_data:
